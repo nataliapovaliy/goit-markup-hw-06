@@ -212,6 +212,7 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
 
@@ -654,14 +655,11 @@ footer {
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
+  padding: 40px 36px 44px;
   background: var(--accent-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  /* transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 1; */
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -684,4 +682,99 @@ footer {
   display: inline-block;
   padding: 6px 6px;
   cursor: pointer;
+}
+
+/* -------------ФОРМА Modal------------- */
+
+.modal-form {
+  padding-top: 12px;
+}
+
+.modal-form-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-top: 4px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.label-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primery-text-color);
+}
+
+.modal-form-name {
+  box-sizing: border-box;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-input-svg {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+.form-feedback {
+  height: 120px;
+}
+
+.modal-form-chekbox {
+  padding-top: 20px;
+}
+
+.chekbox-text {
+  padding-left: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--primery-text-color);
+}
+
+.input-icon-agreement {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-icon {
+  margin-left: -25px;
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  /* border: 1px liner var(--title-text-color); */
+  background-image: url(../images/iconcheckafter.svg);
+}
+
+.input-icon-agreement:checked + .checkbox-icon {
+  background-image: url(../images/icon-check.svg);
+}
+
+.form-modal-link {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
+.form-modal-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
