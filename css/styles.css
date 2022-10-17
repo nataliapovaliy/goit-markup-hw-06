@@ -734,6 +734,8 @@ footer {
 
 .button-modal-close:hover {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------ФОРМА Modal------------- */
@@ -790,18 +792,26 @@ footer {
 }
 
 .modal-form-name:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--accent-color);
 }
 
 .modal-form-name:hover + .form-input-icon {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 
 .modal-form-name:focus-within {
   /* border: 1px solid var(--accent-color); */
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--accent-color);
 }
 .modal-form-name:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* border: 1px solid var(--accent-color); */
   border-color: var(--accent-color);
 }
