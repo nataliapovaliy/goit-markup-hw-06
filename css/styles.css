@@ -781,6 +781,7 @@ footer {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline-color: transparent;
+  color: var(--primery-text-color);
 }
 
 .form-input-icon {
@@ -817,12 +818,7 @@ footer {
 }
 
 .form-feedback {
-  font-weight: 400;
-  font-size: 12px;
   resize: none;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-input .form-feedback {
@@ -831,11 +827,13 @@ footer {
   padding-left: 16px;
 }
 
-/* .modal-form-name::placeholder {
-  border-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-} */
+.modal-form-name::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 
 .modal-form-chekbox {
   padding-top: 20px;
