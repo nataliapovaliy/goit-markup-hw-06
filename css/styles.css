@@ -768,6 +768,7 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primery-text-color);
+  position: relative;
 }
 
 .modal-form-name {
@@ -777,17 +778,36 @@ footer {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline-color: transparent;
 }
 
-.form-input-svg {
+.form-input-icon {
   position: absolute;
+  transition-property: fill;
   top: 11px;
   left: 12px;
+  fill: var(--title-text-color);
+}
+
+.modal-form-name:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-form-name:hover + .form-input-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-name:focus-within {
+  border: 1px solid var(--accent-color);
+}
+.modal-form-name:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .form-feedback {
   font-weight: 400;
   font-size: 12px;
+  resize: none;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
@@ -799,14 +819,10 @@ footer {
   padding-left: 16px;
 }
 
-.form-input::placeholder {
-  /* border-color: var(--accent-color); */
+/* .modal-form-name::placeholder {
+  border-color: var(--accent-color);
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
-}
-
-/* .form-input:hover {
-  background-image: var(--accent-color);
 } */
 
 .modal-form-chekbox {
