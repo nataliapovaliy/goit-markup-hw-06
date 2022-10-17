@@ -703,7 +703,7 @@ footer {
   transform: translate(-50%, -50%);
   width: 528px;
   min-height: 581px;
-  padding: 40px 36px 44px;
+  padding: 40px;
   background: var(--accent-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -719,7 +719,7 @@ footer {
 }
 
 .button-modal-close {
-  position: fixed;
+  position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -810,6 +810,12 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* border-color: var(--accent-color); */
 }
+
+.modal-form-name:focus-within + .form-input-icon {
+  fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-form-name:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -836,10 +842,16 @@ footer {
 }
 
 .modal-form-chekbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 20px;
 }
 
 .chekbox-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   padding-left: 25px;
   font-weight: 400;
   font-size: 14px;
@@ -868,6 +880,7 @@ footer {
 }
 
 .form-modal-link {
+  margin-left: 5px;
   text-decoration-line: underline;
   color: var(--accent-color);
 }
