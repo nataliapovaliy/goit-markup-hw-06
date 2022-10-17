@@ -798,10 +798,12 @@ footer {
 }
 
 .modal-form-name:focus-within {
-  border: 1px solid var(--accent-color);
+  /* border: 1px solid var(--accent-color); */
+  border-color: var(--accent-color);
 }
 .modal-form-name:focus {
-  border: 1px solid var(--accent-color);
+  /* border: 1px solid var(--accent-color); */
+  border-color: var(--accent-color);
 }
 
 .form-feedback {
